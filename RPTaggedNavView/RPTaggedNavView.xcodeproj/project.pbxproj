@@ -16,6 +16,7 @@
 		2BB2B753211AFF6D00C7D585 /* WTRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2B752211AFF6D00C7D585 /* WTRootViewController.m */; };
 		2BB2B756211B00CB00C7D585 /* RPTaggedNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2B755211B00CB00C7D585 /* RPTaggedNavView.m */; };
 		2BB2B759211BDA3900C7D585 /* UIView+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2B758211BDA3800C7D585 /* UIView+Ext.m */; };
+		2BB2B75B211BEF9100C7D585 /* gif_RPTaggedNavView.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2BB2B75A211BEF9100C7D585 /* gif_RPTaggedNavView.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		2BB2B755211B00CB00C7D585 /* RPTaggedNavView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPTaggedNavView.m; sourceTree = "<group>"; };
 		2BB2B757211BDA3800C7D585 /* UIView+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Ext.h"; sourceTree = "<group>"; };
 		2BB2B758211BDA3800C7D585 /* UIView+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Ext.m"; sourceTree = "<group>"; };
+		2BB2B75A211BEF9100C7D585 /* gif_RPTaggedNavView.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif_RPTaggedNavView.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				2BB2B755211B00CB00C7D585 /* RPTaggedNavView.m */,
 				2BB2B757211BDA3800C7D585 /* UIView+Ext.h */,
 				2BB2B758211BDA3800C7D585 /* UIView+Ext.m */,
+				2BB2B75A211BEF9100C7D585 /* gif_RPTaggedNavView.gif */,
 				2BB2B728211AFF0E00C7D585 /* Assets.xcassets */,
 				2BB2B72A211AFF0E00C7D585 /* LaunchScreen.storyboard */,
 				2BB2B72D211AFF0E00C7D585 /* Info.plist */,
@@ -242,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BB2B75B211BEF9100C7D585 /* gif_RPTaggedNavView.gif in Resources */,
 				2BB2B72C211AFF0E00C7D585 /* LaunchScreen.storyboard in Resources */,
 				2BB2B729211AFF0E00C7D585 /* Assets.xcassets in Resources */,
 			);
