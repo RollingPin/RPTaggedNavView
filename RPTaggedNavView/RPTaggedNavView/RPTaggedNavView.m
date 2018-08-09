@@ -127,49 +127,67 @@
 - (void)setTagTextColor_normal:(UIColor *)tagTextColor_normal
 {
     if (_tagTextColor_normal != tagTextColor_normal) {
-        self.tagTextColor_normal = tagTextColor_normal;
+        for (UIButton *subButton in self.buttonsArray){
+            [subButton setTitleColor:tagTextColor_normal forState:UIControlStateNormal];
+        }
         _tagTextColor_normal = tagTextColor_normal;
     }
 }
 - (void)setTagTextColor_selected:(UIColor *)tagTextColor_selected
 {
     if (_tagTextColor_selected != tagTextColor_selected) {
-        self.tagTextColor_selected = tagTextColor_selected;
+        for (UIButton *subButton in self.buttonsArray){
+            [subButton setTitleColor:tagTextColor_selected forState:UIControlStateSelected];
+        }
         _tagTextColor_selected = tagTextColor_selected;
     }
 }
 - (void)setTagTextFont_normal:(CGFloat)tagTextFont_normal
 {
     if (_tagTextFont_normal != tagTextFont_normal) {
-        self.tagTextFont_normal = tagTextFont_normal;
+        for (UIButton *subButton in self.buttonsArray){
+            if (subButton.selected == NO) {
+                subButton.titleLabel.font = [UIFont systemFontOfSize:tagTextFont_normal] ;
+            }
+        }
         _tagTextFont_normal = tagTextFont_normal;
     }
 }
 - (void)setTagTextFont_selected:(CGFloat)tagTextFont_selected
 {
     if (_tagTextFont_selected != tagTextFont_selected) {
-        self.tagTextFont_selected = tagTextFont_selected;
+        for (UIButton *subButton in self.buttonsArray){
+            if (subButton.selected == YES) {
+                subButton.titleLabel.font = [UIFont systemFontOfSize:tagTextFont_selected] ;
+            }
+        }
         _tagTextFont_selected = tagTextFont_selected;
     }
 }
 - (void)setSliderColor:(UIColor *)sliderColor
 {
     if (_sliderColor != sliderColor) {
-        self.sliderColor = sliderColor;
+        self.sliderView.backgroundColor = sliderColor;
         _sliderColor = sliderColor;
     }
 }
 - (void)setSliderW:(CGFloat)sliderW
 {
     if (_sliderW != sliderW) {
-        self.sliderW = sliderW;
+        self.sliderView.width = sliderW;
         _sliderW = sliderW;
     }
 }
 - (void)setSliderH:(CGFloat)sliderH
 {
     if (_sliderH != sliderH) {
-        self.sliderH = sliderH;
+        self.sliderView.height = sliderH;
+        self.sliderView.Y = self.height-self.sliderView.height;
+        for (UIButton *subButton in self.buttonsArray){
+            if (subButton.selected == YES) {
+                self.sliderView.centerX = subButton.centerX;
+            }
+        }
         _sliderH = sliderH;
     }
 }
